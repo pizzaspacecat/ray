@@ -1,0 +1,138 @@
+
+            body {
+                font-family: 'monaco';
+                margin: 0;
+                background-size: 65px;
+                background-image: url('web.gif');
+               
+                color:white
+            }
+            * {
+                box-sizing: border-box;
+            }
+            #container {
+                max-width: 900px;
+                margin: 0 auto;
+                
+            }
+            #header {
+                height: 150;
+                width: 100;
+                text-align: center;
+                background-color: #000000;
+              
+                
+            }
+        
+        
+
+            #flex {
+                display: flex;
+               
+            }
+            aside {
+                background-color: #000000;
+                background-image: url(bat-ezgif.com-resize.jpg);
+                width: 200px;
+                height: 500px;
+                padding: 20px;
+                
+                
+ 
+  
+            }
+            main {
+                background-color: #a97a44;
+                background-image: url(blood.jpg);
+                flex: 1;
+                padding: 20px;
+            }
+            .box {
+                
+                flex: 1;
+               
+            }
+            h1,
+            h2,
+            h3 {
+                font-size: small;
+                color: #c9c4c4;
+                
+            }
+            h1 {
+                font-size: 30px;
+                color: #bd2b2b;
+                 -webkit-text-stroke: 1px #530505;
+            }
+            strong {
+               
+                color: #fff;
+                -webkit-text-stroke: 1px #920c0c;
+                
+            }
+             a:link {
+                color: #c42727;
+                background-color: transparent;
+                text-decoration: none;
+             }
+             a:visited {
+                color: #920c0c;
+                background-color: transparent;
+                text-decoration: none;
+             }
+             a:hover {
+                 color: #920c0c;
+                  background-color: transparent;
+                  text-decoration: underline;
+             }
+             a:active {
+                 color: #920c0c;
+                  background-color: transparent;
+                   text-decoration: underline;
+             }
+            #topBar {
+                width: 100%;
+                height: 100px;
+                padding: 10px;
+                font-size: smaller;
+                background-color: #550707;
+            }
+           #marquee {
+        width:100%; 
+        margin:auto; 
+        overflow: hidden;
+        white-space: nowrap;
+        padding: .5em;
+      }
+      
+      #stamps {
+        display: inline-block;
+        will-change: transform;
+        animation: marquee 80s linear infinite;
+      }
+      #stamps img {
+        width: 99px;
+        height:56px;
+        transition: all 0.2s;
+          position: relative; 
+      z-index: 1; 
+      }
+      
+      @keyframes marquee {
+        0% {
+          transform: translateX(0%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+      #bar{
+         height: 40px;
+                background-color: #550707;
+            
+                width: 100%;
+      }
+ul {
+  list-style-image: url('cross.gif');
+  
+}

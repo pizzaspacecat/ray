@@ -1,0 +1,252 @@
+:root 
+{
+    
+    --nav-button-bg:#60B272; /* darker green */
+    --content-bg:#b19ef1; /* lighter green */
+    --accent-dark-one:#ff239a; /* bold pink */
+    --accent-dark-two:#409547; /* bold blue */
+    --accent-light-one:#642690; /* light blue */
+    --accent-light-two:#8a4ade; /* light pink */
+    --accent-light-three:#9755d8;
+    
+  }
+  
+  html, body {
+    margin:0;
+    font-family:verdana;
+    font-size:10px;
+  }
+  
+  strong {
+    color:var(--accent-dark-one);
+  }
+  em {
+    color:var(--accent-dark-two);
+  }
+  u {
+    color:var(--accent-dark-one);
+  }
+  a {
+    color:var(--accent-dark-two);
+    font-weight:bold;
+  }
+  .nav li {
+    background-color:var(--nav-button-bg);
+    margin-bottom:2px;
+    text-align:center;
+    display:block;
+    padding:5px;
+  }
+  .nav li a {
+    font-weight:bold;
+    text-decoration:none;
+    
+  }
+  .nav {
+    padding-left:0;
+    margin:0;
+    margin-top:5px;
+    list-style-type:none;
+    margin-bottom:10px;
+    
+  }
+  nav.ul {
+    padding:none;
+    margin:none;
+    padding-bottom:10px;
+  }
+  body {
+    background-image: url(starsagain.gif);
+  }
+  .container {
+    max-width:700px;
+  }
+  .alignment {
+    display:flex;
+    justify-content:center;
+  }
+  .content-wrapper {
+    max-width:605px;
+    margin-left:55px;
+    margin-right:0px;
+  }
+  .content {
+    background-color:var(--content-bg);
+    border:3px solid;
+    border-top:none;
+    border-bottom:none;
+    box-shadow: -0.3em 0 .5em;
+    display:flex;
+    flex-wrap:wrap;
+    margin-top:-3px;
+    max-width:100%;
+  }
+  .footer {
+    width:100%;
+    text-align:center;
+    z-index:99;
+    position:absolute;
+    bottom:-150px;
+    left:0;
+    color:var(--accent-dark-one);
+  }
+  
+  .left-content {
+    max-width:350px;
+    margin-right:10px;
+  }
+  .padding p {
+    padding-left:10px;
+  }
+  .right-content {
+    width:200px;
+    flex:1;
+    
+  }
+  .header {
+    margin:0 auto;
+    max-width:713px;
+  }
+  .footer-img {
+    max-width:700px;
+  }
+  .footer-img img {
+    max-width:100%;
+  }
+  .header img {
+    max-width:100%;
+  }
+  div {
+    margin:0;
+    padding:0;
+  }
+  h1 {
+    background-color:var(--accent-light-one);
+    color:white;
+  }
+  h2 {
+    background-color:var(--accent-light-two);
+    color:white;
+  }
+  h1, h2 {
+    padding:3px;
+  }
+  h1, h2, h3, h4 {
+    font-size:12px;
+    margin-top:20px;
+    margin-bottom:20px;
+  }
+  h3 {
+    background-color:var(--accent-light-one);
+    color:white;
+  }
+  h4 {
+    background-color:var(--accent-light-two);
+    color:white;
+  }
+  .subtitle {
+    font-weight:bold;
+    color:var(--accent-dark-one);
+    font-size:14px;
+    border-bottom:2px dashed var(--accent-light-three);
+  }
+  
+  @media only screen and (max-width: 719px) {
+    .content {
+      box-shadow: -0.2em 0 .3em black;
+      border-left:2px solid white;
+      border-right:2px solid white;
+      flex-direction:column;
+      flex-wrap:wrap;
+    }
+    .content-wrapper {
+      max-width:100%;
+      margin-left: 7.85%;
+      margin-right: 6%;
+    }
+    .right-content {
+      display:block;
+      width:100%;
+      order:1;
+    }
+    .left-content {
+      order:2;
+      display:block;
+      width:100%;
+      margin-right:0;
+    }
+    .footer {
+      bottom:-350px;
+      padding-bottom:50px;
+    }
+  }
+  /* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/food/foo-2/foo112.ani), url(https://cur.cursors-4u.net/food/foo-2/foo112.png), auto !important;} /* End https://www.cursors-4u.com */
+ ::-moz-selection { /* Code for Firefox */
+  color: rgb(3, 251, 11);
+  background: yellow;
+}
+
+::selection {
+  color: rgb(0, 0, 0);
+  background: rgb(0, 255, 47);
+}
+.plush-img img{
+  float:left
+}
+  @keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.plush-img img {
+    height: 50%;
+    animation: rotate 2s infinite linear;
+}
+.momo-img img{
+  float:right;
+  
+}
+.scroll-left {
+
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+.scroll-left img {
+  padding: 10px;
+}
+
+.postside{
+height: fit-content;
+overflow: auto;
+width: 30rem;
+padding: 4px;
+}
+.bottomtext{
+width: 100%;
+height: 1.5rem;
+background-color: rgb(44, 44, 44);
+color: white;
+color: #00ff04;
+background: linear-gradient(317deg, #a449e1, transparent);
+padding-left: 5px;
+}
+.alltheposts{
+height: 90%;
+overflow: scroll;
+overflow-y: visible;
+overflow-x: hidden;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+gap: 1px;
+padding: 5px 1px;
+}
